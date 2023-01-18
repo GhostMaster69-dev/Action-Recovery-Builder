@@ -47,6 +47,8 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id
     runs-on: ubuntu-latest
     # You can use either of the ubuntu-20.04 or ubuntu-22.04 runner
+    permissions:
+      contents: write
     steps:
     - name: Display Run Parameters
       run: |
